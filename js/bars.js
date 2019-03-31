@@ -2,11 +2,12 @@ function bar_group() {
   group_ident = 1,
   $(".bar_group").each(function() {  // each: iterate elements in bar_group
     $(this).addClass("group_ident-" + group_ident),
-    $(this).data("gid", group_ident),
+    $(this).data("gid", group_ident),  // attach group_ident to 'gid'
     group_ident++
   })
 }
 function get_max() {
+  // get max value of all values
   $(".bar_group").each(function() {
     var t = [];
     $(this).children().each(function() {
@@ -16,22 +17,26 @@ function get_max() {
     void 0 !== $(this).attr("max") ? $(this).data("bg_max", $(this).attr("max")) : $(this).data("bg_max", Math.max.apply(null, t))
   })
 }
-function data_labels() {
+function data_labels() {  
+  // add label from 'label' class
   $(".bar_group__bar").each(function() {
     void 0 !== $(this).attr("label") && $('<p class="b_label">' + $(this).attr("label") + "</p>").insertBefore($(this))
   })
 }
 function show_values() {
+  // show value on the bar
   $(".bar_group__bar").each(function() {
     "true" == $(this).attr("show_values") && ($(this).css("margin-bottom", "40px"), void 0 !== $(this).attr("unit") ? ($(this).append('<p class="bar_label_min">0 ' + $(this).attr("unit") + "</p>"), $(this).append('<p class="bar_label_max">' + $(this).parent().data("bg_max") + " " + $(this).attr("unit") + "</p>")) : ($(this).append('<p class="bar_label_min">0</p>'), $(this).append('<p class="bar_label_max">' + $(this).parent().data("bg_max") + "</p>")))
   })
 }
 function show_tooltips() {
+  // show tool tips
   $(".bar_group__bar").each(function() {
     "true" == $(this).attr("tooltip") && ($(this).css("margin-bottom", "40px"), $(this).append('<div class="b_tooltip"><span>' + $(this).attr("value") + '</span><div class="b_tooltip--tri"></div></div>'))
   })
 }
 function in_view(t) {
+  // t is jQuery object.
   var a = $(t),
   i = $(window),
   s = i.scrollTop(),
@@ -47,9 +52,11 @@ function bars() {
   show_tooltips(),
   show_values()
 }
-max_arr = {},
+
+// execute
+max_arr = {},  // object
 $(".bar_group__bar").each(function() {
-  in_view($(this))
+  in_view($(this))  // for each 'bar_group__bar', run in_view()
 }),
 $(window).scroll(function() {
   $(".bar_group__bar").each(function() {

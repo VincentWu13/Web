@@ -19,20 +19,24 @@
     <!-- js -->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 
+    <!-- font -->
     <link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
-    <link rel="Shortcut Icon" href='/images/logo.jpeg'> 
+
+    <!-- icon -->
+    <link rel="Shortcut Icon" href='/images/logo.jpeg'>
 
 
     <!-- start-smooth-scrolling -->
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
+      // function for header scrolling
       jQuery(document).ready(function($) {
         $(".scroll").click(function(event){   
           event.preventDefault();
-          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+          $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
         });
       });
     </script>
@@ -147,11 +151,11 @@
             <section class='wrap'>
               <div class='wrap_right'>
                 <div class='bar_group'>
-                <div class='bar_group__bar thin' label='交际' show_values='true' tooltip='true' value='55'></div>
-                <!-- <div class='bar_group__bar thin' label='脾气' show_values='true' tooltip='true' value='100'></div> -->
-                <div class='bar_group__bar thin' label='智商' show_values='true' tooltip='true' value='100'></div>
-                <div class='bar_group__bar thin' label='专注' show_values='true' tooltip='true' value='70'></div>
-                <div class='bar_group__bar thin' label='勤奋' show_values='true' tooltip='true' value='50'></div>
+                  <div class='bar_group__bar thin' label='交际' show_values='true' tooltip='true' value='55'></div>
+                  <!-- <div class='bar_group__bar thin' label='脾气' show_values='true' tooltip='true' value='100'></div> -->
+                  <div class='bar_group__bar thin' label='智商' show_values='true' tooltip='true' value='100'></div>
+                  <div class='bar_group__bar thin' label='专注' show_values='true' tooltip='true' value='70'></div>
+                  <div class='bar_group__bar thin' label='勤奋' show_values='true' tooltip='true' value='50'></div>
                 </div>
               </div>
               <div class='clear'></div>
