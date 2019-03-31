@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>回家的诱惑</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+
+    <!-- css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <link rel="Shortcut Icon" href='/images/logo.jpeg'> 
+
+
+    <!-- start-smooth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){   
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+    </script>
+    <!-- //start-smooth-scrolling -->
+
+  </head>
+  
+  <body class="diary-body">
+
+    <!-- banner -->
+    <div class="banner-figures">
+      <div class="banner">
+        <div class="container banner-drop">
+          <div class="header">
+            <div class="header-left logo">  <!-- left of header -->
+              <h1><a href="index.html">Return to Vincent's Homepage</a></h1>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+          <div class="name" >
+            <h2>Vincent Wu</h2>
+            <p>Master Student</p>
+          </div>
+          <div class="social-icons animated wow bounceInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
+            <ul class="top-links">
+              <li><a target='_blank' href="https://www.facebook.com/wenchang.wu.180"><i class="fa fa-facebook"></i></a></li>
+              <li><a target='_blank' href="https://twitter.com/wwch813"><i class="fa fa-twitter"></i></a></li>
+              <li><a target='_blank' href="https://github.com/gfat813"><i class="fa fa-github"></i></a></li>
+              <li><a target='_blank' href="https://weibo.com/p/1005055254874363/home?from=page_100505&mod=TAB#place"><i class="fa fa-weibo"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="banner-btm-grid-w3ls">
+          <div class="banner-left-wthree">
+            <img src="images/cat.jpg" alt=" " class="img-responsive">
+            <ul class="address">  
+              <li>
+                <ul class="address-text">
+                  <li><b>NAME</b></li>
+                  <li>: Vincent Wu</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>BIRTHDAY</b></li>
+                  <li>: 1994-08-01</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>ADDRESS</b></li>
+                  <li>: Northeastern University, Shenyang, China.</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="address-text">
+                  <li><b>E-MAIL</b></li>
+                  <li><a href="mailto:awpwwch@gmail.com">: awpwwch@gmail.com</a></li>
+                </ul>
+              </li> 
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <script>
+        (function($){
+          $(".menu-icon").on("click", function(){  // click to call function
+            $(this).toggleClass("open");
+            $(".container").toggleClass("nav-open");
+            $("nav ul li").toggleClass("animate");
+          });
+          
+        })(jQuery);
+      </script>
+    </div>
+    <!-- //banner -->
+
+
+    <!-- diary -->
+    <div class="diary" id="diary">
+
+      <!-- title -->
+      <div class="diary-title">
+        <h4 class="diary-title">回家的诱惑</h4>
+        <h5 class="diary-date"><b>Date: 2019-03-26</b></h5>
+      </div>
+
+      <!-- content -->
+      <div class="diary-content">
+        <p>
+          <img src="images/你好骚啊.jpg"/>因为一张“你好骚啊”的表情图入坑，现在陷在坑里不能自拔。被B站的傻屌弹幕逗得不行。
+        </p>
+      </div>
+    </div>
+    <!-- //diary -->
+
+    <script src="js/bars.js"></script>
+
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        /*
+          var defaults = {
+          containerID: 'toTop', // fading element id
+          containerHoverID: 'toTopHover', // fading element hover id
+          scrollSpeed: 1200,
+          easingType: 'linear' 
+          };
+        */         
+        $().UItoTop({ easingType: 'easeOutQuart' });
+  
+      });
+    </script>
+    <!-- //here ends scrolling icon -->
+
+  </body>
+</html>

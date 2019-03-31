@@ -1,0 +1,58 @@
+body.diary-body {
+  background: #f5f5f5;
+}
+
+h5.date-of-diary {
+  color: #ff0000;
+  font-size: 20px;
+}
+
+
+/* diary div setting */
+.diary {
+  color: #000;
+  padding:20px 20px;
+  position: relative;
+  top: 50px;
+  border: 5px solid red;
+  margin: 100px auto;
+  padding: 20px, 10px;
+  width: 60%;
+  overflow: hidden;
+}
+.diary-title {
+  position: relative;
+  top: 10%;
+}
+.diary h4 {  /* title of diary */
+  text-align: center;
+  font-size: 50px;
+  font-family: "黑体"
+}
+.diary h5 {  /* date of diary */
+  font-size: 30px;
+  color: #f00;
+  text-align: right;
+  font-family: "Times New Roman";
+  position: relative;
+  top: 20px;
+  padding-right: 20px;
+}
+.diary-content {
+  margin: 3% auto auto auto;
+}
+.diary-content p {
+  text-indent: 50px;
+  font-size: 25px;
+  line-height: 40px;
+  font-family: "宋体";
+  padding-top: 20px;
+}
+.diary-content img {
+  float: right;
+  width: 500px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+

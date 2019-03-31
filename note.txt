@@ -1,0 +1,5 @@
+font-awesome和bootstrap是两个css库，提供各种图标样式：
+    font-awesome提供微薄等图标
+    bootstrap提供手提箱图标
+
+jQuery是一个js库，提供一些简单的js函数
