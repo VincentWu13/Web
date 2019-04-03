@@ -42,11 +42,11 @@ h5.date-of-diary {
   margin: 3% auto auto auto;
 }
 .diary-content p {
-  text-indent: 50px;
+  text-indent: 2em;
   font-size: 25px;
   line-height: 40px;
   font-family: "宋体";
-  padding-top: 20px;
+  padding-top: 0px;
 }
 .diary-content img {
   float: right;

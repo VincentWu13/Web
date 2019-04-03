@@ -32,6 +32,12 @@ def diary_2():
         'diary_2.html')
 
 
+@app.route('/diary_3.html')
+def diary_3():
+    return render_template(
+        'diary_3.html')
+
+
 @app.route('/<path:path>')
 def return_file(path):
     return send_file(path)
