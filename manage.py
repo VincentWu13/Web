@@ -3,6 +3,8 @@ import os
 import flask
 from flask import render_template, send_file
 
+port = int(os.environ.get('PORT', 5000))
+
 app = flask.Flask('Vincent', template_folder='html')
 
 
@@ -36,4 +38,4 @@ def return_file(path):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=port)
