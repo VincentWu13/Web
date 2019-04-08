@@ -72,11 +72,11 @@ h5.date-of-diary {
   }
   .diary-title h4 {  /* title of diary */
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     font-family: "黑体";
   }
   .diary-title h5 {  /* date of diary */
-    font-size: 1.5em;
+    font-size: 1em;
     color: #f00;
     text-align: right;
     font-family: "Times New Roman";
@@ -88,11 +88,11 @@ h5.date-of-diary {
     margin: 3% auto auto auto;
   }
   .diary-content p {
-    text-indent: 1em;
-    font-size: 1em;
-    line-height: 2em;
+    text-indent: 0.8em;
+    font-size: 0.8em;
+    line-height: 1.6em;
     font-family: "宋体";
-    padding-top: 20px;
+    padding-top: 5%;
   }
   .diary-content img {
     float: right;
