@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-        function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!-- //for-mobile-apps -->
+    <script type="application/x-javascript"> 
+      addEventListener("load", function() {setTimeout(hideURLbar, 0);}, false);
+      function hideURLbar() {
+        window.scrollTo(0,1);
+      } 
+    </script>
 
     <!-- css -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/font-awesome.css" rel="stylesheet"> 
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/base.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/banner.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/about.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/work.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/diary.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/scroll.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/mobile.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/mystyle.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- js -->
@@ -51,31 +60,9 @@
       <div class="banner">
         <div class="container banner-drop">
           <div class="header">
-            <!-- left of header -->
             <div class="header-left logo">  
               <h1><a href="index.html">Welcome to Vincent's Homepage</a></h1>
             </div>
-            <!-- right of header -->
-            <!-- <div class="header-right">  
-              <nav>
-                <ul>
-                <li class="active">
-                  <a href="index.html" class="active"><span>主页</span></a>
-                </li>
-                <li>
-                  <a href="#about" class="scroll"><span>关于我</span></a>
-                </li>
-                <li>
-                  <a href="#experience" class="scroll"><span>经历</span></a>
-                </li>
-                <li>
-                  <a href="#diaries" class="scroll"><span>随笔</span></a>
-                </li>
-                </ul>
-              </nav>
-              <div class="menu-icon animated wow zoomIn" data-wow-duration="1000ms" data-wow-delay="800ms"><span></span></div>
-            </div>
-            <div class="clearfix"> </div> -->
           </div>
           <div class="name" >
             <h2>Vincent Wu</h2>
@@ -90,7 +77,7 @@
             </ul>
           </div>
         </div>
-        <div class="banner-btm-grid-w3ls">
+        <div class="banner-self-information">
           <div class="banner-left-wthree">
             <img src="images/cat.jpg" alt=" " class="img-responsive">
             <ul class="address">  
@@ -109,7 +96,7 @@
               <li>
                 <ul class="address-text">
                   <li><b>ADDRESS</b></li>
-                  <li>: Northeastern University, China.</li>
+                  <li>: NEU, China.</li>
                 </ul>
               </li>
               <li>
@@ -120,7 +107,7 @@
               </li> 
             </ul>
           </div>
-          <div class="clearfix"></div>
+          <div class="clearfix"></div> <!-- clean floating -->
         </div>
       </div>
       <script>
@@ -163,54 +150,94 @@
     <!-- //about -->
 
 
-    <!--work-experience-->
+    <!-- work-experience -->
     <div id="experience" class="experience" name="about">
       <div class="container">
-      <!-- <span class="about-top-w3">Versatile Web Designer</span> -->
         <h4 class="title-w3ls">经历</h4>
 
-        <div class="work-info"> 
-          <div class="colume-1 work-left"> 
+        <!-- work-info -->
+        <!-- h4: date; h5: school; p: major -->
+<!--         <div class="work-info"> 
+          <div class="column-1 work-left"> 
             <h4>2013 - 2017 </h4>
           </div>
-          <div class="colume-1 work-right"> 
-            <h5><span class="glyphicon glyphicon-briefcase"></span>东北大学</h5> <!-- glyphicon-briefcase is case icon in bootstrap lib -->
+          <div class="column-1 work-right"> 
+            <h5><span class="glyphicon glyphicon-briefcase"></span>东北大学</h5>
             <p>自动化 本科 </p>
           </div>
-          <div class="clearfix"> </div>
+          <div class="clearfix"></div>
         </div>
 
         <div class="work-info"> 
-          <div class="colume-1 work-right work-right2"> 
+          <div class="column-1 work-right work-right2"> 
             <h4>2017 - now </h4>
           </div>
-          <div class="colume-1 work-left work-left2"> 
+          <div class="column-1 work-left work-left2"> 
             <h5>东北大学<span class="glyphicon glyphicon-briefcase"></span></h5>
             <p>控制理论与控制工程 硕士</p>
           </div>
-          <div class="clearfix"> </div>
+          <div class="clearfix"></div>
+        </div> -->
+
+        <!-- work-info -->
+        <div class="work-information">
+          <ul>
+            <li>
+              <ul>
+                <li>
+                  <span class="glyphicon glyphicon-briefcase"></span> 
+                </li>
+                <li>
+                  <h4>2013 - 2017:</h4>
+                </li>
+                <li>
+                  <h5>东北大学 自动化 本科</h5>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <span class="glyphicon glyphicon-briefcase"></span> 
+                </li>
+                <li>
+                  <h4>2017 - 2020:</h4>
+                </li>
+                <li>
+                  <h5>东北大学 控制理论与控制工程 硕士</h5>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+
+        <!-- work-info -->
+        <!-- <div class="work-information">
+          <span class="glyphicon glyphicon-briefcase"></span> 
+          <h4>2017 - 2020:</h4>
+          <h5>东北大学 控制理论与控制工程 硕士</h5>
+        </div>
+        <div class="clearfix"></div> -->
+
       </div>
     </div>
+    <!-- //work-experience -->
 
     <!-- diaries -->
     <div class="diaries" id="diaries" name="about">
       <div class="container">
-      <!-- <span class="about-top-w3">The best of my diaries </span> -->
         <h4 class="title-w3ls">随笔</h4>
         <div class="news-bottom">
 
           <!-- column -->
           <!-- left for image, right for paragraph. -->
-          <div class="news-one-wthree-agile">
+          <div class="diary-box">
             <!-- picture -->
-            <div class="colume-1 news-left">
+            <div class="column-2 news-left">
                 <a class="lightbox" href="diary_3.html">
                   <img src="images/fufu.jpg" alt=""/>
                 </a>
             </div>
             <!-- brief -->
-            <div class="colume-1 news-right"> 
+            <div class="column-2 news-right"> 
               <h4>网站终于上线了</h4>
               <h5 class="date-of-diary">2019-04-03</h5>
               <p class="para-w3-agile">折腾了一个星期，网站终于上线了。</p>  
@@ -220,31 +247,31 @@
           <!-- //column -->
 
           <!-- column -->
-          <div class="news-one-wthree-agile">
-            <div class="colume-1 news-right"> 
-              <h4>回家的诱惑</h4>
-              <h5 class="date-of-diary">2019-03-26</h5>
-              <p class="para-w3-agile">因为一张“你好骚啊”的表情图入坑，现在陷在坑里不能自拔。被B站的傻屌弹幕逗得不行。</p>
-            </div> 
-            <div class="colume-1 news-left">
+          <div class="diary-box">
+            <div class="column-2 news-left">
               <a class="lightbox" href="diary_2.html">
                 <img src="images/sao.jpg" alt=""/>
               </a> 
-            </div>            
+            </div>       
+            <div class="column-2 news-right"> 
+              <h4>回家的诱惑</h4>
+              <h5 class="date-of-diary">2019-03-26</h5>
+              <p class="para-w3-agile">因为一张“你好骚啊”的表情图入坑，现在陷在坑里不能自拔。被B站的傻屌弹幕逗得不行。</p>
+            </div>      
             <div class="clearfix"> </div> 
           </div>
           <!-- column -->
 
           <!-- column -->
-          <div class="news-one-wthree-agile">
+          <div class="diary-box">
             <!-- picture -->
-            <div class="colume-1 news-left">
+            <div class="column-2 news-left">
               <a class="lightbox" href="diary_1.html">
                 <img src="images/harden.jpg" alt=""/>
               </a>
             </div>
             <!-- brief -->
-            <div class="colume-1 news-right"> 
+            <div class="column-2 news-right"> 
               <h4>第一篇日志</h4>
               <h5 class="date-of-diary">2019-03-25</h5>
               <p class="para-w3-agile">哈登MVP！火箭总冠军！</p>  
@@ -260,7 +287,7 @@
 
     <script src="js/bars.js"></script>
 
-    <!-- here stars scrolling icon -->
+    <!-- scrolling icon -->
     <script type="text/javascript">
       $(document).ready(function() {
         /*
@@ -274,7 +301,7 @@
         $().UItoTop({ easingType: 'easeOutQuart' });     
       });
     </script>
-    <!-- //here ends scrolling icon -->
+    <!-- //scrolling icon -->
 
   </body>
 </html>

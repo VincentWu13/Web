@@ -6,11 +6,6 @@ h5.date-of-diary {
   color: #ff0000;
   font-size: 20px;
 }
-.colume-1 {
-  float: left;
-  width: 50%;
-  position: relative;
-}
 
 /* diary div setting in diary page */
 .diary {

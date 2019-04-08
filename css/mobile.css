@@ -1,0 +1,210 @@
+@media(max-width: 1080px){
+
+  /*------ banner ------*/ 
+  .header {
+    padding: 5em 0;
+    text-align: center;
+  }
+  .header-right nav {
+      left: 20%;
+      top: -21.5%;
+  }
+  .container.banner-drop.nav-open {
+      margin-top: 6em;
+  }
+  .name h2 {
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 4px;
+    color: #fff;
+  }
+  .name p {
+    text-align: center;
+    font-size: 1em;
+    margin: 10px 0 15px;
+    letter-spacing: 0.5em;
+    color: #fff;
+  }
+  .banner {
+    min-height: 578px;
+    margin-bottom: 10.5em;
+    background: url(../images/banner.jpg) no-repeat -120px 0px;
+    background-size: cover;
+  }
+  .banner-self-information {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 75%;
+  }
+  .banner-left-wthree {
+      width: 100%;
+  }
+  .banner-left-wthree img {
+    width: 100px;
+  }
+  .banner-right-w3-agileits iframe {
+    height: 301px;
+  }
+  .banner-left-wthree li {
+    font-size: 1.2em;
+  }
+  ul.address {
+    margin-top: 1.6em;
+  }
+  ul.address li ul.address-text li:nth-child(1) {
+    width: 30%;
+  }
+  ul.address li ul.address-text li {
+    font-size: 13px;
+  }
+  .logo h1 a {
+    font-size: 1.3em;
+  }
+  /*------ //banner ------*/
+
+
+  /*------ about ------*/
+  .skills-bar .bar_group__bar.thin {
+    height: 10px;
+  }
+  .skills-bar .bar_group__bar.thin::before {
+    height: 10px;
+  }
+  /*------ //about ------*/
+
+
+  /*------ work ------*/
+  .work-information {
+    list-style-type: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto: 
+  }
+
+  .work-information ul li {
+    display: block;
+  }
+
+  .work-information ul li ul li {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    margin-top: .8em;
+    font-weight: 400;
+  }
+
+  .work-information ul li ul li:nth-child(1) {  /* 1st li */
+    width: 10%;
+  }
+
+  .work-information ul li ul li:nth-child(2) {  /* 2nd li */
+    width: 25%;
+  }
+
+  .work-information h4 {
+    font-size: 70%;
+    color: #00bdbd;
+    margin-bottom: .5em;
+    display: inline-block;
+    padding: 0 1.2em; 
+  }
+
+  .work-information h5 {
+    font-size: 70%;
+    display: inline-block;
+    padding: .4em 1.2em;
+    color: #0a0a0a;
+    position: relative;
+  }
+
+  .work-information span.glyphicon {  /* icon */
+    margin-left: 5%;
+    font-size: 70%;
+    color: #ffffff;
+    background: #ec1944;
+    padding: 1em;
+    -webkit-border-radius: 70%;
+    -moz-border-radius: 70%;
+    border-radius: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  /*------ //work ------*/
+
+
+  /*------ diary ------*/
+  .diary-box {
+    margin-top: 2.5%;
+  }
+  .diary-box:nth-child(1) { /* n-th child of this element */
+    margin-top: 0%;
+  }
+  .column-2 {
+    float: none;
+    position: relative;
+    width: 80%;
+    left: 10%;
+  }
+  /* news-left for image */
+  .news-left {
+    /*height: 300px;*/
+  }
+  .news-left img {
+    height: 100%;
+  } 
+  /* news-right for paragraph */
+  .news-right {
+    padding: 3.68em 2em 3.5em 2em;
+    /*height: 300px;*/
+    border: 1px solid rgb(230, 229, 229);
+    text-align: left;
+    background: #fff;
+  }
+  .news-right h4 {
+    margin: 0;
+  }
+  .news-right h4 {
+    font-size: 1.4em;
+    margin: 0;
+    color: #00bdbd;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+  }
+  .news-right p {
+    line-height: 37px;
+  }
+  .news-right a h4:hover {
+    color: #ec1944;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+  }
+  .news-right h5 {
+    color: #b0afb1;
+    margin: 12px 0px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+  }
+  .news-right a h4 {
+    font-size: 1.2em;
+    margin-bottom: .66em;
+  }
+  .news-right p {
+    line-height: 33px;
+  }.para-w3-agile {
+    font-size: 14px;
+  }
+  .news-right {
+    padding: 2em 2em 1.5em 2em;
+  }
+  /*------ //diary ------*/
+}
