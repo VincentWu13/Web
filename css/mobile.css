@@ -222,11 +222,9 @@
   /*------ diary_page ------*/
   .diary {
     /*color: #000;*/
-    position: absolute;
     width: 90%;
     left: 5%;
     top: 95%;
-    border: none;
     padding: 5%;
   }
 
