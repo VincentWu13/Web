@@ -1,23 +1,33 @@
-@media(max-width: 1080px){
-
+@media(max-width: 1080px) {
   /*------ banner ------*/ 
   .header {
-    padding: 5em 0;
+    position: relative;
+    margin-top: 10%;
+    padding: 0;
+    top: 50%;
+    left: 0%;
     text-align: center;
   }
-  .header-right nav {
-      left: 20%;
-      top: -21.5%;
+
+  .header h1 a {  /* title */
+    font-size: 1.2em;
+    margin-top: 3em;
+    padding-top: 10%;
+    text-decoration: none;
+    color: #00bdbd;
   }
-  .container.banner-drop.nav-open {
-      margin-top: 6em;
+
+  .name {
+    margin-top: 10%; 
   }
+
   .name h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
     letter-spacing: 4px;
     color: #fff;
   }
+
   .name p {
     text-align: center;
     font-size: 1em;
@@ -25,39 +35,53 @@
     letter-spacing: 0.5em;
     color: #fff;
   }
+
+  .container.banner-drop.nav-open {
+    margin-top: 6em;
+  }
+
   .banner {
     min-height: 578px;
     margin-bottom: 10.5em;
     background: url(../images/banner.jpg) no-repeat -120px 0px;
     background-size: cover;
   }
+
   .banner-self-information {
     position: absolute;
     width: 90%;
     left: 5%;
     top: 75%;
   }
+
   .banner-left-wthree {
       width: 100%;
   }
+
   .banner-left-wthree img {
     width: 100px;
   }
+
   .banner-right-w3-agileits iframe {
     height: 301px;
   }
+
   .banner-left-wthree li {
     font-size: 1.2em;
   }
+
   ul.address {
     margin-top: 1.6em;
   }
+
   ul.address li ul.address-text li:nth-child(1) {
     width: 30%;
   }
+
   ul.address li ul.address-text li {
     font-size: 10px;
   }
+
   .logo h1 a {
     font-size: 1.3em;
   }
@@ -68,6 +92,7 @@
   .skills-bar .bar_group__bar.thin {
     height: 10px;
   }
+
   .skills-bar .bar_group__bar.thin::before {
     height: 10px;
   }
@@ -137,34 +162,32 @@
   .diary-box {
     margin-top: 2.5%;
   }
+
   .diary-box:nth-child(1) { /* n-th child of this element */
     margin-top: 0%;
   }
+
   .column-2 {
     float: none;
     position: relative;
     width: 80%;
     left: 10%;
   }
+
   /* news-left for image */
-  .news-left {
-    /*height: 300px;*/
-  }
   .news-left img {
     height: 100%;
   } 
+
   /* news-right for paragraph */
   .news-right {
-    padding: 3.68em 2em 3.5em 2em;
-    /*height: 300px;*/
+    padding: 2em;
     border: 1px solid rgb(230, 229, 229);
     text-align: left;
     background: #fff;
   }
-  .news-right h4 {
-    margin: 0;
-  }
-  .news-right h4 {
+
+  .news-right h4 {  /* title */
     font-size: 1.4em;
     margin: 0;
     color: #00bdbd;
@@ -177,34 +200,74 @@
     -o-transition: .5s ease-in-out;
     -ms-transition: .5s ease-in-out;
   }
-  .news-right p {
-    line-height: 37px;
-  }
-  .news-right a h4:hover {
-    color: #ec1944;
-    transition: .5s ease-in-out;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    -ms-transition: .5s ease-in-out;
-  }
-  .news-right h5 {
-    color: #b0afb1;
+
+  .news-right h5 {  /* date */
+    color: #ff0000;
     margin: 12px 0px;
-    font-size: 1.5em;
+    font-size: 1em;
     letter-spacing: 2px;
+    text-align: right;
   }
-  .news-right a h4 {
-    font-size: 1.2em;
-    margin-bottom: .66em;
-  }
+
   .news-right p {
     line-height: 33px;
-  }.para-w3-agile {
+  }
+
+  .para-w3-agile {
     font-size: 14px;
   }
-  .news-right {
-    padding: 2em 2em 1.5em 2em;
-  }
   /*------ //diary ------*/
+
+
+  /*------ diary_page ------*/
+  .diary {
+    /*color: #000;*/
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 95%;
+    border: none;
+    padding: 5%;
+  }
+
+  .diary-title {
+    position: relative;
+    top: 20%;
+  }
+
+  .diary-title h4 {  /* title of diary */
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "黑体";
+  }
+
+  .diary-title h5 {  /* date of diary */
+    font-size: 1em;
+    color: #f00;
+    text-align: right;
+    font-family: "Times New Roman";
+    position: relative;
+    top: 20px;
+    padding-right: 20px;
+  }
+
+  .diary-content {
+    margin: 10% auto auto auto;
+  }
+
+  .diary-content p {
+    text-indent: 0.8em;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    padding-top: 5%;
+  }
+
+  .diary-content img {
+    float: right;
+    width: 50%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+  }
+  /*------ //diary_page ------*/
+
 }

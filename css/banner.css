@@ -1,3 +1,17 @@
+.container {
+  margin: 0 auto;
+  -moz-transition: all 0.3s ease 0.6s;
+  -o-transition: all 0.3s ease 0.6s;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition-delay: 0.6s;
+  -webkit-transition: all 0.3s ease 0.6s;
+  transition: all 0.3s ease 0.6s;
+  position: relative;
+  -o-transition-delay: 0.1s;
+  -moz-transition-delay: 0.6s;
+  -ms-transition-delay: 0.6s;
+}
+
 .header ul li a,.more a,.footer p a,input[type="submit"],.recent-comments-grid-right h4 a,.admin-right p a,.tags ul li a,.comments-list ul li a,.categories ul li a,.comments-list h3 a,.popular-right h5 a,.mail-grid-left-pos,.mail-grid-left,.team-grid1-sub,.footer-copy-grid ul li a,.about-grid-left1 ul li a,.about-grid ul li a {
   transition: .5s ease-in-out;
   -webkit-transition: .5s ease-in-out;
@@ -18,45 +32,23 @@
   margin-bottom: 10.6em
 }
 
-.logo h1 a {  /* title */
-  font-size: 1.2em;
+.header {
+  position: relative;
+  margin-top: 5%;
+  padding: 1em;
+  top: 50%;
+  left: 0%;
+}
+
+.header h1 a{  /* title */
+  font-size: 2em;
   margin: 0%;
   text-decoration: none;
   color: #00bdbd;
-  line-height: 45px;
 }
 
-.header {
-  position: relative;
-  padding: 1em;
-  top: 10%;
-  text-align: center;
-}
-
-.header-left ul li {
-  display: inline-block;
-  margin-right: 5em;
-  font-size: 14px;
-  color: #fff;
-}
-
-.header-left ul li span {
-  left: -0.5em;
-  color: #00bdbd;
-}
-
-.header-left ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.header-left ul li a:hover {
-  color: #00bdbd;
-}
-
-.header-left {
-  float: left;
-  padding: 0em 0 0 0em;
+.name {
+  margin-top: 5%; 
 }
 
 .name h2 {
@@ -176,20 +168,6 @@
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-}
-
-.container {
-  margin: 0 auto;
-  -moz-transition: all 0.3s ease 0.6s;
-  -o-transition: all 0.3s ease 0.6s;
-  -webkit-transition: all 0.3s ease;
-  -webkit-transition-delay: 0.6s;
-  -webkit-transition: all 0.3s ease 0.6s;
-  transition: all 0.3s ease 0.6s;
-  position: relative;
-  -o-transition-delay: 0.1s;
-  -moz-transition-delay: 0.6s;
-  -ms-transition-delay: 0.6s;
 }
 
 /*-- social-icons --*/
