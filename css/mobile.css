@@ -175,8 +175,13 @@
   }
 
   /* news-left for image */
+  .news-left .lightbox {
+    width: 100%;
+  } 
+
   .news-left img {
-    height: 100%;
+    height: 75% ;
+    width: 100%;
   } 
 
   /* news-right for paragraph */
