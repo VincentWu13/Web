@@ -71,15 +71,3 @@
   line-height: 37px;
 }
 
-a.lightbox img {
-  width: 100%;
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
-a.lightbox img:hover {
-  background: #21A957;
-}
-
